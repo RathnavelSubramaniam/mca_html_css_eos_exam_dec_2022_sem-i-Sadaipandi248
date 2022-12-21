@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restro</title>
+    <link rel="shortcut icon" href="../image/icon.png">
+    <link rel="stylesheet" href="../styles/content1.css">
+</head>
+<body>
+    <header>
+        <img src="../image/logo-removebg-preview.png" alt="" style="width: 90px;">
+        <h1 id="name">Restro</h1>
+    </header>
+    <main>
+        <!-- nav bar -->
+        <div class="topnav" id="myTopnav">
+            <a href="../index.html" class="active">Home</a>
+            <a href="#news">Offers</a>
+            <a href="#contact">Contact</a>
+            <a href="../html/content2.html">Details</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+          
+          <div style="padding-left:16px">
+          
+          <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+          </script>
+
+           <!-- two column layout -->
+           <div class="row">
+            <div class="column">
+              <h3><i>Briyani</i></h3>
+              <img src="../image/briyani.jpg" alt="biryani"><br>
+              <p>&#8594; 350 grams chicken chopped <br>
+                &#8594; 300 grams basmati rice boiled <br>
+                &#8594; 60 grams yoghurt (curd) beaten <br>
+                &#8594;  15 grams garlic paste <br>
+                &#8594;  15 grams ginger paste <br>
+            That is very deste and spicy food.and all chilldrens and <br> parents likes her.</p>
+              
+            </div>
+            <div class="column">
+                <h3>Order:</h3>
+              <form action="myform.php" name="book" id="book">
+                <label for="">Name:</label>
+                <input type="text" name="Name" class="order" placeholder="Enter Your Name" autofocus required><br><br>
+                <label for="">Phone Number:</label>
+                <input type="text" name="Phone" class="order" placeholder="enter your phone number" required><br><br>
+                <label for="">Address:</label>
+                <input type="text" name="address" class="order" required><br><br>
+                <label for="">Feedback:</label>
+                <input type="text" name="Feedback" class="order"><br><br>
+                <input type="button" value="submit" name="submit" id="submit">
+              </form>
+            </div>
+          </div>
+          
+    </main>
+    <footer>
+        &copy; copyrights 2022 in Restro
+    </footer>
+</body>
+</html>
